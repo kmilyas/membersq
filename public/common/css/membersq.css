@@ -1,0 +1,120 @@
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 40px;
+}
+#footer {
+    background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+
+.container .credit {
+    margin: 10px 0;
+}
+/* Main marketing message and sign up button */
+
+p {
+    font-size: 1.2em
+}
+/* Supporting marketing content */
+.marketing {
+    margin: 60px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+@media (max-width: 480px) {
+    .jumbotron {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .jumbotron h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+    .jumbotron .lead {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+    .jumbotron .btn {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .jumbotron {
+        margin: 50px 0;
+        text-align: center;
+    }
+    .jumbotron h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+    .jumbotron .lead {
+        font-size: 18px;
+        line-height: 1.25;
+    }
+    .jumbotron .btn {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .jumbotron {
+        margin: 70px 0;
+        text-align: center;
+    }
+    .jumbotron h1 {
+        font-size: 80px;
+        line-height: 1;
+    }
+    .jumbotron .lead {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+    .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+@media (min-width: 980px) {
+    .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+    }
+    .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+    }
+    .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+    .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in &middot; MembersQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="common/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+       html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -40px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 40px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      .container .credit {
+        margin: 10px 0;
+      }
+
+
+    </style>
+    <link href="common/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="common/ico/favicon.png">
+  </head>
+
+  <body>
+    <div id="wrap">
+    <div id="fb-root"></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">MembersQ</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                        
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+      <form id="signup-form" class="form-signin" style="margin-top: 5%">
+          <h2 class="form-signin-heading">Please sign up</h2>
+          <a href="javascript:" id="connectFBButton"><img src="/common/img/fb_connect_large.png"></a>
+          <br><br>
+          <input id="email" name="email" type="text" class="input-block-level required" placeholder="Email address" data-bind="value: email">
+          <input id="first_name" name="first_name" type="text" class="input-block-level required" placeholder="First Name" data-bind="value: first_name">
+          <input id="last_name" name="last_name" type="text" class="input-block-level required" placeholder="Last Name" data-bind="value: last_name">
+          <input id="password" name="password" type="password" class="input-block-level" placeholder="Password" data-bind="value: password">
+          <input id="confirm_password" name="confirm_password" type="password" class="input-block-level" placeholder="Re-type Password">
+          <label class="checkbox">
+            <input type="checkbox" id="agree" name="agree" value="agree"> I agree to site policy <a href="/policy.html">(Site Policy)</a>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="rememberme" name="rememberme" data-bind="checked: rememberMe"> Remember Me
+          </label>
+        <button class="btn btn-large btn-primary">Sign up</button>
+      </form>
+
+    </div> <!-- /container -->
+    <div id="push"></div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">MembersQ 2013 </p>
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+    <script src="common/js/global-vars.js"></script>
+    <script src="common/js/signup-page.js"></script>
+    
+  </body>
+</html>
